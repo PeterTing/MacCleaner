@@ -1,0 +1,79 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build-and-release:
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v1
+        with:
+          swift-version: '5.9'
+      
+      - name: Install SwiftLint
+        run: brew install swiftlint
+      
+      - name: Run SwiftLint
+        run: swiftlint lint --strict
+        continue-on-error: true  # Don't fail the build on lint warnings
+      
+      - name: Extract version from tag
+        id: get_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+      
+      - name: Build and create DMG
+        run: |
+          chmod +x bundle.sh
+          ./bundle.sh ${{ steps.get_version.outputs.VERSION }} --dmg
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: MacCleaner ${{ steps.get_version.outputs.VERSION }}
+          body: |
+            ## MacCleaner ${{ steps.get_version.outputs.VERSION }}
+            
+            ### Installation
+            1. Download `MacCleaner-v${{ steps.get_version.outputs.VERSION }}.dmg`
+            2. Open the DMG and drag MacCleaner.app to Applications
+            3. First launch: Allow execution in System Settings > Privacy & Security
+            
+            ### Changes
+            See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+            
+            ### Checksums
+            SHA256 checksums are provided in the `.sha256` file.
+          draft: false
+          prerelease: false
+      
+      - name: Upload DMG
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/MacCleaner-v${{ steps.get_version.outputs.VERSION }}.dmg
+          asset_name: MacCleaner-v${{ steps.get_version.outputs.VERSION }}.dmg
+          asset_content_type: application/x-apple-diskimage
+      
+      - name: Upload SHA256
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/MacCleaner-v${{ steps.get_version.outputs.VERSION }}.dmg.sha256
+          asset_name: MacCleaner-v${{ steps.get_version.outputs.VERSION }}.dmg.sha256
+          asset_content_type: text/plain

@@ -77,3 +77,7 @@ iOSInjectionProject/
 *.tar.gz
 *.dmg
 *.pkg
+
+# Distribution
+dist/
+

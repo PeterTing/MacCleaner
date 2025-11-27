@@ -1,16 +1,22 @@
 #!/bin/bash
 
+set -e  # Exit on error
+
 APP_NAME="MacCleaner"
+VERSION="${1:-1.0.0}"
 BUILD_DIR=".build/release"
 APP_BUNDLE="$APP_NAME.app"
 CONTENTS_DIR="$APP_BUNDLE/Contents"
 MACOS_DIR="$CONTENTS_DIR/MacOS"
 RESOURCES_DIR="$CONTENTS_DIR/Resources"
+DMG_NAME="$APP_NAME-v$VERSION.dmg"
+DMG_DIR="dist"
 
-echo "Building $APP_NAME..."
+echo "🔨 Building $APP_NAME v$VERSION..."
 swift build -c release
 
-echo "Creating App Bundle..."
+echo "📦 Creating App Bundle..."
+rm -rf "$APP_BUNDLE"
 mkdir -p "$MACOS_DIR"
 mkdir -p "$RESOURCES_DIR"
 
@@ -32,7 +38,7 @@ cat > "$CONTENTS_DIR/Info.plist" <<EOF
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.0</string>
+    <string>$VERSION</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>LSMinimumSystemVersion</key>
@@ -43,5 +49,38 @@ cat > "$CONTENTS_DIR/Info.plist" <<EOF
 </plist>
 EOF
 
-echo "$APP_NAME.app created successfully!"
+echo "✅ $APP_NAME.app created successfully!"
+
+# Create DMG if requested
+if [ "$2" == "--dmg" ]; then
+    echo "💿 Creating DMG..."
+    mkdir -p "$DMG_DIR"
+    
+    # Remove old DMG if exists
+    rm -f "$DMG_DIR/$DMG_NAME"
+    
+    # Create a temporary directory for the DMG content
+    TMP_DMG_DIR=$(mktemp -d)
+    cp -R "$APP_BUNDLE" "$TMP_DMG_DIR/"
+    
+    # Create DMG using hdiutil
+    hdiutil create -volname "$APP_NAME" \
+        -srcfolder "$TMP_DMG_DIR" \
+        -ov -format UDZO \
+        "$DMG_DIR/$DMG_NAME"
+    
+    # Clean up
+    rm -rf "$TMP_DMG_DIR"
+    
+    # Calculate SHA256
+    SHA256=$(shasum -a 256 "$DMG_DIR/$DMG_NAME" | awk '{print $1}')
+    echo "$SHA256" > "$DMG_DIR/$DMG_NAME.sha256"
+    
+    echo "✅ DMG created: $DMG_DIR/$DMG_NAME"
+    echo "📝 SHA256: $SHA256"
+else
+    echo "💡 Tip: Run './bundle.sh $VERSION --dmg' to create a DMG package"
+fi
+
+echo ""
 echo "You can now open it with: open $APP_NAME.app"
