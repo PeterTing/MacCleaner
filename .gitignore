@@ -1,0 +1,79 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+*.xcodeproj
+xcuserdata/
+DerivedData/
+.DS_Store
+
+# macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build Products
+*.app
+*.dSYM.zip
+*.dSYM
+*.ipa
+
+# Swift Package Manager Lock File
+Package.resolved
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.hmap
+*.ipa
+build/
+Pods/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# Artifacts (keep planning and documentation)
+# These are project management files that should be kept
+# implementation_plan.md
+# task.md
+# walkthrough.md
+
+# Temporary files
+*.swp
+*~
+.idea/
+.vscode/
+
+# Build artifacts
+*.o
+*.lo
+*.la
+*.al
+.libs/
+*.so
+*.so.*
+*.dylib
+*.exe
+*.out
+*.app
+
+# Archives
+*.zip
+*.tar.gz
+*.dmg
+*.pkg
