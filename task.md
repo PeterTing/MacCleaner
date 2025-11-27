@@ -1,0 +1,25 @@
+# Tasks
+
+- [x] Initialize Project Structure <!-- id: 0 -->
+    - [x] Create `Package.swift` <!-- id: 1 -->
+    - [x] Create `Sources/MacCleaner` directory <!-- id: 2 -->
+- [x] Implement Core Logic <!-- id: 3 -->
+    - [x] Implement `Scanner.swift` (File scanning logic) <!-- id: 4 -->
+    - [x] Implement `Cleaner.swift` (File deletion logic) <!-- id: 5 -->
+    - [x] Implement `LargeFileScanner.swift` (Large file scanning logic) <!-- id: 16 -->
+    - [x] Implement `Scanner` updates for DMGs, Messages, Mail <!-- id: 17 -->
+    - [x] Update `Cleaner` for file filtering <!-- id: 18 -->
+    - [x] Implement `DockerCleaner.swift` (Docker cleanup logic) <!-- id: 19 -->
+    - [x] Add Docker UI section <!-- id: 20 -->
+    - [x] Add Docker volume/image detection <!-- id: 21 -->
+    - [x] Add selective Docker cleanup UI <!-- id: 22 -->
+- [x] Implement UI <!-- id: 6 -->
+    - [x] Create `MacCleanerApp.swift` (Entry point) <!-- id: 7 -->
+    - [x] Create `ContentView.swift` (Main UI) <!-- id: 8 -->
+- [x] Verification <!-- id: 9 -->
+    - [x] Build and Run App <!-- id: 10 -->
+    - [x] Verify Scanning Accuracy <!-- id: 11 -->
+    - [x] Verify Cleaning Functionality <!-- id: 12 -->
+- [x] Packaging <!-- id: 13 -->
+    - [x] Create Bundle Script <!-- id: 14 -->
+    - [x] Bundle App <!-- id: 15 -->

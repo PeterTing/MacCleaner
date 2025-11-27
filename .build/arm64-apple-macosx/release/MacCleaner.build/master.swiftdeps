@@ -1,0 +1,12 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "b010640c8b1194c9041344c61ba881f3de23adb28e21fe22f8d8cfebe1691b5c"
+build_start_time: [1764226205, 517480000]
+build_end_time: [1764226206, 836457000]
+inputs:
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Cleaner.swift": [1764224150, 560877409]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/ContentView.swift": [1764226103, 283919954]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/DockerCleaner.swift": [1764226131, 817243139]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/DockerCleanupView.swift": [1764226202, 862090570]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/LargeFileScanner.swift": [1764223702, 660034199]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/MacCleanerApp.swift": [1764222419, 364657603]
+  "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Scanner.swift": [1764224148, 533315071]

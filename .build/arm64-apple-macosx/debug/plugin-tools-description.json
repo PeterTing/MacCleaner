@@ -1,0 +1,330 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MacCleaner-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/sources",
+      "importPath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Cleaner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/LargeFileScanner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/MacCleanerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Scanner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "MacCleaner",
+      "moduleOutputPath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/Modules/MacCleaner.swiftmodule",
+      "objects" : [
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Cleaner.swift.o",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/ContentView.swift.o",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/LargeFileScanner.swift.o",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/MacCleanerApp.swift.o",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Scanner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "MacCleaner_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "maccleaner"
+      ],
+      "outputFileMapPath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Cleaner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/LargeFileScanner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/MacCleanerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Scanner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/Modules/MacCleaner.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Cleaner.swift",
+        "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/ContentView.swift",
+        "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/LargeFileScanner.swift",
+        "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/MacCleanerApp.swift",
+        "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Scanner.swift"
+      ],
+      "tempsPath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MacCleaner" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacCleaner",
+      "-package-name",
+      "maccleaner",
+      "-incremental",
+      "-c",
+      "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Cleaner.swift",
+      "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/ContentView.swift",
+      "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/LargeFileScanner.swift",
+      "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/MacCleanerApp.swift",
+      "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Scanner.swift",
+      "-I",
+      "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "MacCleaner_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "maccleaner",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MacCleaner" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner-entitlement.plist"
+    },
+    "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Cleaner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/LargeFileScanner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/MacCleanerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/Sources/MacCleaner/Scanner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/sources"
+    },
+    "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Cleaner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/LargeFileScanner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/MacCleanerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.build/Scanner.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/MacCleaner.product/Objects.LinkFileList"
+    },
+    "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/peterting/Documents/program/MacCleaner/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
